@@ -1,0 +1,46 @@
+[06-Jul-2012 12:41:46] PHP Fatal error:  Uncaught exception 'Zend_View_Exception' with message 'Invalid value passed to append; please use appendMeta()' in /home/zendbase/library/Zend/View/Helper/HeadMeta.php:231
+Stack trace:
+#0 /home/zendbase/library/Zend/View/Helper/HeadMeta.php(164): Zend_View_Helper_HeadMeta->append(Object(stdClass))
+#1 /home/zendbase/application/Bootstrap.php(28): Zend_View_Helper_HeadMeta->__call('appendProperty', Array)
+#2 /home/zendbase/application/Bootstrap.php(28): Zend_View_Helper_HeadMeta->appendProperty('og:title', 'NOMBRE SITIO')
+#3 /home/zendbase/library/Zend/Application/Bootstrap/BootstrapAbstract.php(669): Bootstrap->_initView()
+#4 /home/zendbase/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('view')
+#5 /home/zendbase/library/Zend/Application/Bootstrap/BootstrapAbstract.php(586): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#6 /home/zendbase/library/Zend/Application.php(355): Zend_Application_Bootstrap_BootstrapAbstract- in /home/zendbase/library/Zend/View/Helper/HeadMeta.php on line 231
+[06-Jul-2012 12:51:42] PHP Fatal error:  Uncaught exception 'Zend_View_Exception' with message 'Invalid value passed to append; please use appendMeta()' in /home/zendbase/library/Zend/View/Helper/HeadMeta.php:231
+Stack trace:
+#0 /home/zendbase/library/Zend/View/Helper/HeadMeta.php(164): Zend_View_Helper_HeadMeta->append(Object(stdClass))
+#1 /home/zendbase/application/Bootstrap.php(28): Zend_View_Helper_HeadMeta->__call('appendProperty', Array)
+#2 /home/zendbase/application/Bootstrap.php(28): Zend_View_Helper_HeadMeta->appendProperty('og:title', 'NOMBRE SITIO')
+#3 /home/zendbase/library/Zend/Application/Bootstrap/BootstrapAbstract.php(669): Bootstrap->_initView()
+#4 /home/zendbase/library/Zend/Application/Bootstrap/BootstrapAbstract.php(622): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('view')
+#5 /home/zendbase/library/Zend/Application/Bootstrap/BootstrapAbstract.php(586): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#6 /home/zendbase/library/Zend/Application.php(355): Zend_Application_Bootstrap_BootstrapAbstract- in /home/zendbase/library/Zend/View/Helper/HeadMeta.php on line 231
+[06-Jul-2012 12:55:04] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller class ("LayoutController")' in /home/zendbase/library/Zend/Controller/Dispatcher/Standard.php:352
+Stack trace:
+#0 /home/zendbase/library/Zend/Controller/Dispatcher/Standard.php(262): Zend_Controller_Dispatcher_Standard->loadClass('LayoutControlle...')
+#1 /home/zendbase/library/Zend/View/Helper/Action.php(135): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#2 /home/zendbase/library/Zend/View/Abstract.php(350): Zend_View_Helper_Action->action('top', 'layout', 'default')
+#3 /home/zendbase/application/layouts/scripts/layout.phtml(10): Zend_View_Abstract->__call(Array, Array)
+#4 /home/zendbase/application/layouts/scripts/layout.phtml(10): Zend_View->action('action', Array)
+#5 /home/zendbase/library/Zend/View.php(108): include('/home/zendbase/...')
+#6 /home/zendbase/library/Zend/View/Abstract.php(888): Zend_View->_run('top', 'layout', 'default')
+#7 / in /home/zendbase/library/Zend/Controller/Plugin/Broker.php on line 336
+[06-Jul-2012 12:55:49] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller class ("LayoutController")' in /home/zendbase/library/Zend/Controller/Dispatcher/Standard.php:352
+Stack trace:
+#0 /home/zendbase/library/Zend/Controller/Dispatcher/Standard.php(262): Zend_Controller_Dispatcher_Standard->loadClass('LayoutControlle...')
+#1 /home/zendbase/library/Zend/View/Helper/Action.php(135): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#2 /home/zendbase/library/Zend/View/Abstract.php(350): Zend_View_Helper_Action->action('top', 'layout', 'default')
+#3 /home/zendbase/application/layouts/scripts/layout.phtml(10): Zend_View_Abstract->__call(Array, Array)
+#4 /home/zendbase/application/layouts/scripts/layout.phtml(10): Zend_View->action('action', Array)
+#5 /home/zendbase/library/Zend/View.php(108): include('/home/zendbase/...')
+#6 /home/zendbase/library/Zend/View/Abstract.php(888): Zend_View->_run('top', 'layout', 'default')
+#7 / in /home/zendbase/library/Zend/Controller/Plugin/Broker.php on line 336
+[06-Jul-2012 12:56:29] PHP Fatal error:  Uncaught exception 'Zend_View_Exception' with message 'script 'layout/top.phtml' not found in path (/home/zendbase/application/layouts/scripts/:/home/zendbase/application/modules/default/views/scripts/)' in /home/zendbase/library/Zend/View/Abstract.php:988
+Stack trace:
+#0 /home/zendbase/library/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('layout/top.phtm...')
+#1 /home/zendbase/library/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('layout/top.phtm...')
+#2 /home/zendbase/library/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('layout/top.phtm...', NULL)
+#3 /home/zendbase/library/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /home/zendbase/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /home/zendbase/library/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker in /home/zendbase/library/Zend/Controller/Plugin/Broker.php on line 336
